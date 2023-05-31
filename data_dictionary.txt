@@ -1,0 +1,66 @@
+table name, column, data type, valid values, description
+
+immigration_fact, immigrants_id, int, integer greater than 0, id column, 
+immigration_fact, cicid, int, integer greater than 0, i94 id column,
+immigration_fact, I94_year, int, 4-digit integer, I94 record year,
+immigration_fact, I94_month, int, 1 or 2-digit integer, I94 record month,
+immigration_fact, cit_code, int, 3-digit code, code to identify country of citizenship,
+immigration_fact, res_code, int, 3-digit code, code to identify country of residence,
+immigration_fact, arrival_port, str, 3-character code, code to identify US arrival port,
+immigration_fact, state_code, str, 2 characters, state code to identify state,
+immigration_fact, arrdate_int, int, 5-digit integer, date of arrival in number of days after 1960-01-01
+immigration_fact, depdate_int, int, 5-digit integer, date of departure in number of days after 1960-01-01
+immigration_fact, age, int, positive integer, age of immigrant,
+immigration_fact, visa_code, int, integer between 1 and 3 inclusive, code to identify visa type,
+immigration_fact, birth_year, int, 4-digit integer, year of birth of immigrant,
+immigration_fact, allowed until, 
+immigration_fact, gender, str, M or F, gender of immigrant,
+immigration_fact, airline, str, , airline code,
+dates, arrdate, int, 5-digit integer, date of arrival in number of days after 1960-01-01,
+dates, arrival_date, date, full-format date, date of arrival,
+dates, day, int, value in between 1 and 31, day of month of arrival,
+dates, week, int, value in between 1 and 53, week of year of arrival,
+dates, month, int, value in between 1 and 12, month of year of arrival,
+dates, quarter, int, value in between 1 and 4, quarter of year of arrival,
+dates, year, int, 4-digit value, year of arrival,
+demographics, city, str, character string, US city,
+demographics, state_code, str, character string, US state code,
+demographics, median_age, double, positive value, median age of city population,
+demographics, male_population, int, integer, male population count,
+demographics, female_population, int, integer, female population count,
+demographics, total_population, int, integer, total population count,
+demographics, veteran_population, int, integer, veteran population count,
+demographics, foreign_born_population, int, integer, foreign-born population count,
+demographics, avg_household_size, double, positive value, average household size,
+race, city, str, character string, US city,
+race, state_code, str, character string, US state code,
+race, race, str, character string, name of ethnic group, 
+race, count, int, integer, population of ethnic group,
+state, state_code, str, character string, US state code,
+state, state, str, character string, US state name,
+visa_codes, visa_code, int, integer between 1 and 3 inclusive, code to identify visa type,
+visa_codes, visa_type, str, character string, visa type full name,
+airports, city, str, character string, US city,
+airports, continent, str, 2-character string, code for name of continent,
+airports, iso_country, str, character string, name of country,
+airports, state_code, str, character string, US state code,
+airports, latitude, str, character string, latitude of city with format xx.xxN/S,
+airports, longitude, str, character string, longitude of city with format xx.xxE/W,
+temperature, city, str, character string, city name, 
+temperature, country, str, character string, name of country,
+temperature, month, int, value in between 1 and 12, month of yearof temperature record,
+temperature, latitude, str, character string, latitude of city with format xx.xxN/S,
+temperature, longitude, str, character string, longitude of city with format xx.xxE/W,
+temperature, avg_temp, double, , mean temperature of city for given month,
+port_codes, port_code
+port_codes, city, str, character string, US city,
+port_codes, state_code, str, character string, US state code,
+citres_codes, citres_code, str, 3-character code, code to identify country of citizenship/residence,
+citres_codes, country, str, character string, name of country
+
+
+
+
+
+
+
